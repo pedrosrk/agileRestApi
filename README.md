@@ -18,3 +18,5 @@ Obs.: .gitignore will ignore the agl enviroment
 # To create and update requeriments
 - pip freeze > requirements.txt
 
+# To debug mode in flask
+flask --app app --debug run

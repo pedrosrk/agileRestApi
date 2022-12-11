@@ -1,14 +1,7 @@
 from flask import Flask
-from flask_restful import Resource, Api
 
-agile = Flask(__name__)
-api = Api(agile)
+app = Flask(__name__)
 
-class HelloWorld(Resource):
-    def get(self):
-        return {'hello': 'world'}
-
-api.add_resource(HelloWorld, '/')
-
-if __name__ == '__main__':
-    agile.run(debug=True)
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"

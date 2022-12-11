@@ -1,5 +1,6 @@
 # agileRestApi
-
+- / -> GET
+- - Return hello world in Html mode.
 
 
 # Enviroment
